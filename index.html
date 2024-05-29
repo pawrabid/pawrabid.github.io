@@ -1,9 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Altex Solutions</title>
+    <style>
+        /* Reset some default styles */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden; /* Prevent scrolling on the entire page */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Container to center the content */
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+            text-align: center;
+            overflow: hidden; /* Prevent scrolling within the container */
+            position: relative; /* Ensure the container stays within the viewport */
+        }
+
+        /* Styling the image */
+        .responsive-image {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            pointer-events: none; /* Disable pointer events on the image */
+            position: absolute; /* Position the image absolutely within its container */
+            top: 50%; /* Center vertically */
+            left: 50%; /* Center horizontally */
+            transform: translate(-50%, -50%); /* Center the image precisely */
+        }
+    </style>
 </head>
 <body>
-    <img src="comming.jpg" alt="Altex Digital Solut">
+    <div class="container">
+        <img src="https://github.com/pawrabid/pawrabid.github.io/blob/main/comming.png?raw=true" alt="Altex Solutions Coming Soon" class="responsive-image">
+    </div>
 </body>
 </html>
