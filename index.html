@@ -13,11 +13,13 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            font-family: Arial, sans-serif;
         }
 
         /* Container to center the content */
         .container {
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100%;
@@ -32,11 +34,28 @@
             display: block;
             margin: 0 auto;
         }
+
+        /* Styling the button */
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #007bff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <img src="https://raw.githubusercontent.com/pawrabid/pawrabid.github.io/main/comming.png" alt="Description of the image" class="responsive-image">
+        <a href="https://www.facebook.com/profile.php?id=61557740321173" class="button">Visit our Facebook Page</a>
     </div>
 </body>
 </html>
