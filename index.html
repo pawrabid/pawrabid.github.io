@@ -40,6 +40,7 @@
             display: inline-block;
             padding: 10px 20px;
             margin-top: 20px;
+            margin-bottom: 20px;
             font-size: 16px;
             color: white;
             background-color: #007bff;
@@ -51,18 +52,28 @@
             background-color: #0056b3;
         }
 
-        /* Styling the text container */
-        .text-container {
-            margin-top: 20px;
+        /* Additional styling for exact positioning */
+        .position-container {
+            position: relative;
+        }
+        .position-container img {
+            display: block;
+        }
+        .button-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <img src="https://raw.githubusercontent.com/pawrabid/pawrabid.github.io/main/comming.png" alt="Description of the image" class="responsive-image">
-        <a href="https://www.facebook.com/profile.php?id=61557740321173" class="button">Visit our Facebook Page</a>
-        <div class="text-container">
-            <p>Altex Digital Solutions</p>
+        <div class="position-container">
+            <img src="https://raw.githubusercontent.com/pawrabid/pawrabid.github.io/main/comming.png" alt="Description of the image" class="responsive-image">
+            <div class="button-container">
+                <a href="https://www.facebook.com/profile.php?id=61557740321173" class="button">Visit our Facebook Page</a>
+            </div>
         </div>
     </div>
 </body>
